@@ -1,0 +1,51 @@
+.content{
+    /* background-color:aqua; */
+    /* Max-width: 40rem; */
+    margin-top: 13rem;
+    margin-bottom: 5rem;
+  }
+ .content  h1,h4{
+    text-align: center;
+    color: aliceblue;
+    
+  }
+  .p{
+    text-align: center;
+    color: aliceblue;
+  }
+ h1{
+    font-size: 3.75rem;
+    color: aliceblue;
+ }
+  .inputF{
+  /* margin-left: 7rem; */
+  height:4rem;
+  width: 45rem;
+  /* Max-width:25rem ; */
+  margin:2rem 0 2rem 2rem;
+  }
+  .button{
+  height:4rem;
+  width: 11rem;
+  font-size: large;
+  margin:2rem  2rem 2rem 0;
+  background-color: red;
+  cursor: pointer;
+  }
+  .inp{
+display:flex;
+justify-content: center;
+  }
+  .error{
+    text-align: center;
+    color: yellow;
+  }
+
+  @media only screen and (max-width:768px){
+    .content{
+        width: fit-content;
+    }
+    .input {
+        width: 90%;
+    }
+  }

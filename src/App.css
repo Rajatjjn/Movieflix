@@ -1,7 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
-
+/* body{
+  background-color: black
+} */
+body{
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

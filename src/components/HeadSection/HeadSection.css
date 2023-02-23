@@ -1,0 +1,47 @@
+.nav_logoo{
+    position: fixed;
+    width: 12rem;
+    /* object-fit: contain; */
+ margin-top: 0;
+   top: 0;
+
+}
+.headsection{
+    position: fixed;
+    /* display: flex;
+    justify-content: space-between; */
+    width:100%;
+    height: 4rem;
+    /* background-color:; */
+    transition-timing-function: ease-in;
+    transition: all 0.6s;
+
+}
+.headsection ul{
+    display: flex;
+    justify-content:flex-end;
+    gap: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+.buttonn{
+    height: 2rem;
+    width: 6rem;
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    
+    
+}
+.headsection ul li h3{
+    color: antiquewhite;
+}
+.navv{
+   background-color: #111;
+}
+@media only screen and (max-width:768px){
+    .headsection{
+        max-width: fit-content;
+    }
+}

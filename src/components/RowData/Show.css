@@ -1,0 +1,35 @@
+.row_p{
+    object-fit: contain;
+    width:100%;
+    max-height: 100px;
+    margin-right: 0.9rem;
+    transition: transform 480ms;
+
+}
+.show_Main{
+ 
+    background-color: black;
+}
+.title{
+    color: white;
+}
+.row{
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+   }
+.row::-webkit-scrollbar{
+    display: none;
+}
+.row_p:hover{
+    transform:scale(1.09)
+}
+
+
+.row_L{
+    max-height: 258px;
+}
+.row_L:hover{
+    transform: scale(1.09);
+}

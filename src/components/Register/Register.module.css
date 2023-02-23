@@ -1,0 +1,21 @@
+.main{
+    height: 32rem;
+    width: 20rem;
+    /* background-color: green; */
+    margin-left: 40rem;
+    margin-top: 7rem;
+}
+
+.input{
+    height: 3rem;
+    width: 18rem;
+    margin: 1rem 0 1rem 0;
+}
+.btn{
+    height: 3rem;
+    width: 18rem;
+    margin: 1rem 0 1rem 0;
+    border-radius: 2px;
+    background-color: red; 
+    border: none;
+}

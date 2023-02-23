@@ -1,0 +1,58 @@
+.main{
+    height: 20rem;
+    width: 100%;
+    /* background-image: url("https://blog.vpncity.com/wp-content/uploads/2020/01/xx.png"); */
+    /* background-image: url(1.jpg); */
+   opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: cover;
+background-color: aqua;
+}
+.button{
+    border: 2px solid red;
+    height:2rem;
+    width:5rem;
+    background-color: red;
+    border-radius: 4px;
+    margin-right: 1rem;
+    margin-top: 1rem;
+
+}
+
+
+.nave ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem;
+   
+}
+.logo{
+    width:10rem;
+    height:4rem
+}
+.content{
+   
+    height: 30rem;
+    max-width: 35rem;
+    /* background-color: aqua; */
+  
+}
+
+  .content  h1,h4,p{
+    color: wheat;
+    font-weight: bolder;
+  } 
+
+
+@media only screen and (max-width:768px) {
+  /* .nav{
+    width: fit-content;
+  } */
+  .main{
+    /* height: 100vh; */
+    width: 100%;
+  }
+  .logo{
+    width:7rem
+  }
+}

@@ -1,0 +1,47 @@
+.title{
+    display:flex;
+    justify-content: space-between;
+    background-color:#303030;
+    padding: 2rem;
+    cursor: pointer;
+    color: antiquewhite;
+
+}
+.head{
+    font-size: 2rem;
+    text-align: center;
+    margin:2rem 0 2rem 0;
+}
+.ActiveItem{
+    padding: 2rem;
+    color: aliceblue;
+}
+.item{
+    margin: 1rem;
+    background-color:#303030;
+}
+.block{
+    max-width: 800px;
+    
+    margin: 2rem auto;
+}
+/* h1{
+    text-align: center;
+    margin:2rem 0 2rem 0;
+    
+
+} */
+.parent{
+    margin-top: 0;
+    background-color:black;
+    
+}
+@media screen and (max-width: 768px) {
+    body {
+      font-size: 18px;
+    }
+  
+    .block {
+      width: 90%;
+    }
+  }

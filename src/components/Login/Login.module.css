@@ -1,0 +1,85 @@
+.main{
+  
+    background-color:rgba(0, 0, 0, 0.752);
+    
+    height:35rem;
+    width:25rem;
+    margin-left: 40%;
+    
+  
+    /* margin-left: 18rem;
+    margin-top: 13rem; */
+} 
+.contain{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100%;
+    width: 100%;
+    background-image: url("1.jpg");
+    
+
+/* background-repeat: no-repeat; */
+}
+.input{
+    width :18rem;
+    height:3rem;
+    margin-left: 2rem;
+    background-color: rgba(24, 13, 13,0.7);
+    font-size: medium;
+    font-weight: 200;
+    color: aliceblue;
+    
+}
+.password{
+    width :18rem;
+    height:3rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    background-color: rgba(24, 13, 13,0.7);
+    font-size: medium;
+    font-weight: 200;
+    color: aliceblue;
+}
+.link p{
+    color: 
+       #8c8c8c;
+        font-size: 13px;
+        
+ 
+}
+.button button{
+    width :18rem;
+    height:3rem;
+    margin-left: 2rem;
+    margin-top: 2rem; 
+    background-color: red;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.main h2{
+    margin-left: 2rem;
+    padding: 1rem;
+}
+.link p{
+margin-left: 2rem;
+}
+.input::placeholder{
+margin-left: 1rem;
+}
+.logo{
+    /* position: absolute; */
+    top: 2;
+    height: 4rem;
+    width: 13rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width:768px) {
+ .main{
+    width: fit-content;
+    height: fit-content;
+ }
+    
+}

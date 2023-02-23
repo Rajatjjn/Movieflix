@@ -1,0 +1,51 @@
+.header{
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    object-fit: contain;
+    height: 32rem;
+}
+.main{
+    margin-left: 2rem;
+    padding-top: 8.5rem;
+    height:12rem
+}
+.overview{
+    width:46rem;
+    line-height: 1.4;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    max-width: 23rem;
+    height:5rem
+}
+.title{
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.4rem;
+
+
+}
+
+.btn{
+    cursor: pointer;
+    color:#fff;
+    font-weight: 800;
+    background-color:rgba(51,51,51,0.5) ;
+    padding:0.5rem 2rem 0.5rem 2rem;
+    border: none;
+    margin-right: 0.8rem;
+
+
+
+}
+
+.btn:hover{
+color:black;
+background-color: red;
+transition: all 0.2s;
+
+}
+/* .extra{
+    height: 7.4rem;
+    background-image: linear-gradient(180deg,transparent,rgba(37,37,37,0.61),#111);
+} */
