@@ -19,3 +19,12 @@
     background-color: red; 
     border: none;
 }
+@media only screen and (max-width:768px) {
+    .main{
+        height: fit-content;
+        width: fit-content;
+        /* background-color: green; */
+        margin-left: 0.5rem;
+        margin-top: 0;
+    }
+}

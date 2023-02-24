@@ -13,7 +13,7 @@ export const passvalidation = (password) => {
     if (passwordRegix.test(password)) {
       return "true";
     } else {
-      return "false";
+      return "enter valid password";
     }
   };
   
@@ -22,6 +22,6 @@ export const passvalidation = (password) => {
     if(userRegix.test(name)){
       return "true"
     }else {
-      return "false"
+      return "enter valid username"
     }
   }

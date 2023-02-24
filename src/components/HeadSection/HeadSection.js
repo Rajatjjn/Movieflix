@@ -27,7 +27,7 @@ window.addEventListener("scroll",()=>{
   const Navigate=useNavigate()
 
   function HandleLogout(){
-    let text="Do you want to logout"
+    let text="Do you want to Signout"
     if(window.confirm(text)==true){
       setLoginInfo(false);
       Navigate("/login")

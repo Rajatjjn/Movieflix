@@ -77,9 +77,23 @@ margin-left: 1rem;
 }
 
 @media only screen and (max-width:768px) {
- .main{
-    width: fit-content;
-    height: fit-content;
- }
+.main{
+    /* background-color: green; */
+    margin-left: 0;
+    width: auto;
+    
     
 }
+.contain{
+    background-image: none;
+    background-color: black;
+}
+/* .password{
+    width: 250px;
+}
+.input{
+    width: 250px;
+} */
+
+ }
+    

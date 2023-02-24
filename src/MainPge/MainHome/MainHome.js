@@ -15,18 +15,18 @@ import style from "./MainHome.module.css"
 export default function MainHome() {
   return (
     <>
-    <div style={{backgroundColor:"black"}}>
-    <div className={style.di}>
-     <Nav/>
-    <Middle/>
-    
-  </div>
- <Accordian/>
- <hr/>
-<Footer/>
-    
-    </div>
-     
+      <div style={{ backgroundColor: "black" }}>
+        <div className={style.di}>
+          <Nav />
+          <Middle />
+
+        </div>
+        <Accordian />
+        <hr />
+        <Footer />
+
+      </div>
+
     </>
   )
 }
