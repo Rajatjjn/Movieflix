@@ -7,9 +7,12 @@ import { emailvalidation, passvalidation, NameValidation } from "../../Helper";
 import { useNavigate } from "react-router-dom";
 import { useSetRecoilState } from "recoil";
 import { isLogin } from "../../Recoil";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Register() {
   const loginstatus = useSetRecoilState(isLogin);
+  
   let data = JSON.parse(localStorage.getItem("email"));
   // console.log(data)
   const [name, setName] = useState("");
@@ -65,7 +68,10 @@ export default function Register() {
     } else if (password === "") {
       setPassError("please enter password");
     } else {
-      alert("please enter correct input");
+      // alert("please enter correct input");
+      toast.error("Please enter correct input", {
+        position: toast.POSITION.TOP_RIGHT,
+      });
     }
   }
 
@@ -115,6 +121,7 @@ export default function Register() {
         />
       </div>
       {/* </div> */}
+      <ToastContainer />
     </>
   );
 }

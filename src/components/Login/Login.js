@@ -6,6 +6,8 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useSetRecoilState } from "recoil";
 import { isLogin } from "../../Recoil";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Login() {
   let data = JSON.parse(localStorage.getItem("userDetails"));
@@ -32,13 +34,17 @@ export default function Login() {
       alert("successful login");
       setLoginInfo(true);
       Navigate("/Home");
+   
     } else if (email === "") {
       SetEerror("Email is required");
     } else if (password === "") {
       setPassrror("password is required");
       SetEerror("");
     } else {
-      alert("You are not Registered ,register first");
+      //  alert("You are not Registered ,register first");
+      toast.error('You are not registered!', {
+        position: toast.POSITION.TOP_RIGHT
+    });
       setPassrror("");
     }
   }
@@ -54,6 +60,7 @@ export default function Login() {
             placeholder="Email"
             onChange={HandleEmail}
           />
+         
           <h6 style={{ color: "yellow", marginLeft: "2rem" }}>{Eerror}</h6>
           {/* <div> */}
           <input
@@ -66,6 +73,7 @@ export default function Login() {
           <h6 style={{ color: "yellow", marginLeft: "2rem" }}>{Perror}</h6>
           <div className={style.button}>
             <button onClick={HandleLogin}>Sign up</button>
+         
           </div>
           <br />
           <div className={style.link}>
@@ -81,6 +89,7 @@ export default function Login() {
         </div>
         <Footer />
       </div>
+      <ToastContainer/>
     </>
   );
 }

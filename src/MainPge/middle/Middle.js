@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { emailvalidation } from "../../Helper";
 import style from "./Middle.module.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Middle() {
   const [email, setemail] = useState("");
@@ -26,18 +28,16 @@ export default function Middle() {
   console.log(emailerror);
   function HandleClick() {
     if (emailerror === "true") {
-      // const obj={
-      //     email:email
-      // }
-      // localEmail.push(email)
       localStorage.setItem("email", JSON.stringify(email));
-
       Navigate("/register");
     } else if (email === "") {
     //   alert("plese fill input");
     setemailerror("Email is required")
     } else {
-      alert("please enter valid credentials");
+      // alert("please enter valid credentials");
+      toast.error('Enter valid credentials!', {
+        position: toast.POSITION.TOP_RIGHT
+    });
     }
   }
   return (
@@ -73,6 +73,7 @@ export default function Middle() {
         </div>
         <p className={style.error}>{emailerror}</p>
       </div>
+      <ToastContainer/>
     </>
   );
 }

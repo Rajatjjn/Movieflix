@@ -4,6 +4,8 @@ import { useSetRecoilState } from 'recoil'
 import Button from '../../Atoms/Button'
 import { isLogin } from '../../Recoil'
 import "./HeadSection.css"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function HeadSection() {
   const[show,setshow]=useState(false);
@@ -30,8 +32,12 @@ window.addEventListener("scroll",()=>{
     let text="Do you want to Signout"
     if(window.confirm(text)==true){
       setLoginInfo(false);
-      Navigate("/login")
-      alert("successfully logout")
+      Navigate("/login");
+      localStorage.removeItem("email")
+      // alert("successfully logout")
+      toast.success('Successfully Logout', {
+        position: toast.POSITION.TOP_RIGHT
+    });
     
     } else{
       text="cancel"
@@ -54,7 +60,7 @@ window.addEventListener("scroll",()=>{
 </ul>
         
       </div>
-
+<ToastContainer/>
     </>
   )
 }

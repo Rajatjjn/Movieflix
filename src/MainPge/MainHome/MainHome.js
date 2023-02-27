@@ -1,16 +1,10 @@
-import React from 'react'
-import Middle from '../middle/Middle'
-import Nav from '../Nav/Nav'
+import React from "react";
+import Middle from "../middle/Middle";
+import Nav from "../Nav/Nav";
 
-import Accordian from '../Accordion/Accordian'
-import Footer from '../../components/footer/Footer'
-import style from "./MainHome.module.css"
-
-
-
-
-
-
+import Accordian from "../Accordion/Accordian";
+import Footer from "../../components/footer/Footer";
+import style from "./MainHome.module.css";
 
 export default function MainHome() {
   return (
@@ -19,14 +13,11 @@ export default function MainHome() {
         <div className={style.di}>
           <Nav />
           <Middle />
-
         </div>
         <Accordian />
         <hr />
         <Footer />
-
       </div>
-
     </>
-  )
+  );
 }

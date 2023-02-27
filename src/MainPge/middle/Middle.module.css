@@ -27,6 +27,7 @@
   .button{
   height:4rem;
   width: 11rem;
+  border: none;
   font-size: large;
   margin:2rem  2rem 2rem 0;
   background-color: red;

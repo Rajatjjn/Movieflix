@@ -41,7 +41,14 @@
    background-color: #111;
 }
 @media only screen and (max-width:768px){
-    .headsection{
-        max-width: fit-content;
+    /* .headsection{
+        width: fit-content;
+    } */
+    .headsection ul li h3{
+        color: antiquewhite;
+    display: none;
+    }
+    .headsection ul{
+        margin-right: 0;
     }
 }

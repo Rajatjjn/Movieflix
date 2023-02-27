@@ -2,7 +2,7 @@
     object-fit: contain;
     width:100%;
     max-height: 100px;
-    margin-right: 0.9rem;
+    margin-right: 0.2rem;
     transition: transform 480ms;
 
 }
@@ -20,6 +20,12 @@
     padding: 20px;
    }
 .row::-webkit-scrollbar{
+    display: none;
+}
+.top{
+    background-color: black;
+}
+.top::-webkit-scrollbar{
     display: none;
 }
 .row_p:hover{

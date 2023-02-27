@@ -39,7 +39,7 @@ export default function Show({ title, Data, isLargeRow }) {
   }
   return (
     <>
-      <div style={{ backgroundColor: "black" }}>
+      <div className="top">
         <div className="show_Main">
           <h2 className="title">{title}</h2>
           <div className="row">
