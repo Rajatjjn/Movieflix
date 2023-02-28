@@ -68,3 +68,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+###
+uses Api from Tmdb movie database website,
+
+###Uses react-router dom library to routing through multiple pages without refershing
+
+###
+uses Recoil to manage state globally
+
+###
+uses react toastify to show error messages
+
+###
+Take reference from Netflix website to make ui like movie website
