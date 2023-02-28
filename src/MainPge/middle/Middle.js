@@ -32,6 +32,9 @@ export default function Middle() {
       Navigate("/register");
     } else if (email === "") {
     //   alert("plese fill input");
+    toast.error('Enter email!', {
+      position: toast.POSITION.TOP_RIGHT
+  });
     setemailerror("Email is required")
     } else {
       // alert("please enter valid credentials");

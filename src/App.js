@@ -23,10 +23,10 @@ function App() {
   return (
     // <div className="App">
     <>
-    <div style={{backgroundColor:'black',width:"100vw"}}>
+    <div style={{backgroundColor:'black'}}>
     <HeadSection/>
      <Header/> 
-     <Show title="Netflix Originals" Data={Fetch.fetchNetflixOriginals} isLargeRow={true}/>
+     <Show title="Movieflix Originals" Data={Fetch.fetchNetflixOriginals} isLargeRow={true}/>
      <Show title="Trending Now" Data={Fetch.fetchTrending}/>
      <Show title="Top Rated" Data={Fetch.fetchTopRated}/>
      <Show title="Action Movies" Data={Fetch.fetchActionMovies}/>

@@ -12,7 +12,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 export default function Register() {
   const loginstatus = useSetRecoilState(isLogin);
-  
+
   let data = JSON.parse(localStorage.getItem("email"));
   // console.log(data)
   const [name, setName] = useState("");
@@ -50,7 +50,7 @@ export default function Register() {
   }
 
   function HandleRegister() {
-    if (emailerror === "true" && passerror === "true" && nameerror === "true") {
+    if (emailerror === "true" && passerror === "true" && nameerror === "true" ) {
       const obj = {
         name: name,
         email: email,
@@ -85,7 +85,7 @@ export default function Register() {
           Welcome!<h6 style={{ color: "green" }}>{data}</h6>
         </h2>
         <br />
-        <h3>Joining Netflix is easy.</h3>
+        <h3>Joining Movieflix is easy.</h3>
         <br />
         <h6>Enter your details and you'll be watching in no time.</h6>
         <br />

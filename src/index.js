@@ -13,6 +13,8 @@ import Middle from './MainPge/middle/Middle';
 import Register from './components/Register/Register';
 import MainHome from './MainPge/MainHome/MainHome';
 import { RecoilRoot } from 'recoil';
+import Plan from './components/PlanPage1/Plan';
+import SubscriptionPlan from './components/Planpage2/Subscription';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,6 +26,8 @@ root.render(
         <Route path="/" element={<MainHome/>}/>
         <Route path="/register" element={<Register/>}/>
         <Route path="/login" element={<Login/>}/>
+        <Route path="/plan" element={<Plan/>}/>
+        <Route path='/subscription' element={<SubscriptionPlan/>}/>
         <Route path='/Home' element={<App/>}/>
  
     </Routes>
@@ -31,9 +35,9 @@ root.render(
   </RecoilRoot>
 
     
-
+{/* <Plan/> */}
  {/* <Accordian/>  */}
-
+{/* <SubscriptionPlan/> */}
     
   </React.StrictMode>
 );

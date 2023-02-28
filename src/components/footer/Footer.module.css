@@ -3,7 +3,7 @@
 } */
 .main{
     background-color:rgba(0, 0, 0, 0.752);
-    height:23rem;
+    height:26rem;
     margin-top: 0;
     
 }
@@ -48,6 +48,18 @@ a{
 .netflix {
     
     margin-left: 1.8rem;
+}
+.wrapper{
+    display: flex;
+    gap: 1rem;
+}
+.icon{
+    font-size: 2rem;
+   
+}
+.icon:hover{
+    transform: scale(1.5);
+    transition: all 1s;
 }
 
 @media only  screen and(min-width:768px) {

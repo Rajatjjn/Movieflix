@@ -32,6 +32,7 @@ export default function Show({ title, Data, isLargeRow }) {
       movieTrailer(mv?.name || "")
         .then((url) => {
           const urlParams = new URLSearchParams(new URL(url).search);
+          // console.log(urlParams.get("v"),"param")
           setTrailerUrl(urlParams.get("v"));
         })
         .catch((error) => console.log(error));

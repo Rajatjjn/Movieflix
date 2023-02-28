@@ -23,6 +23,7 @@
   width: 45rem;
   /* Max-width:25rem ; */
   margin:2rem 0 2rem 2rem;
+  
   }
   .button{
   height:4rem;
@@ -36,6 +37,7 @@
   .inp{
 display:flex;
 justify-content: center;
+
   }
   .error{
     text-align: center;
