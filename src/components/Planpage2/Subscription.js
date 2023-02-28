@@ -10,8 +10,8 @@ import { useEffect } from 'react';
 
 
 export default function SubscriptionPlan() {
-  
-  const Navigate=useNavigate()
+  const [data,setData] = useState(plans)
+
 
   const isUserLoggedIn = useRecoilValue(isLogin);
   const navigate = useNavigate();
@@ -21,12 +21,15 @@ export default function SubscriptionPlan() {
       navigate("/");
     }
   });
-  function HandleButton(index){
+
+
+  function handleClick(x){
+    x.isSubcribe=true
+    setData([...data])
+    alert(`${x.planName} is successfully Subscribe!ENJOY`)
+   navigate("/Home")
     
-    alert("You are subscribed now!ENJOY")
-Navigate("/Home")
   }
-  
 
   return (
     <>
@@ -36,16 +39,21 @@ Navigate("/Home")
       <div className="subscription-plan-container">
         {plans.map((plan, index) => (
           <SubscriptionPlanCard
-            key={index}
+            key={plan.id}
             planName={plan.planName}
             price={plan.price}
             features={plan.features}
-            buttonText={plan.planName}
-            OnClick={(()=>HandleButton(index))}
+            
+            buttonText={plan.isSubcribe ? plan.buttonSubcribe : plan.buttonText}
+            isSubcribe={plan.isSubcribe}
+            OnClick={(()=>handleClick(plan))}
           />
         ))}
+    
       </div>
+     
     </div>
+  
     </>
   );
 }

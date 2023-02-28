@@ -31,7 +31,7 @@ export default function Plan() {
        <h1 className={style.logo}><TiTick /></h1>
       <h3 style={{textAlign:'center'}}>Choose Your Plan</h3><br/>
       <h5><TiTick style={{color:"red"}}/>{"  "}No commitments, cancel anytime.</h5><br/>
-      <h5><TiTick style={{color:"red"}} />{"  "}Everything on Netflix for one low price.</h5><br/>
+      <h5><TiTick style={{color:"red"}} />{"  "}Everything on Movieflix for one low price.</h5><br/>
       <h5><TiTick style={{color:"red"}}/>{"  "} No ads and no extra fees. Ever.</h5><br/><br/>
      <Link to="/subscription"><Button
         InputCss={style.InputCss}

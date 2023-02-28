@@ -9,8 +9,16 @@ export default function SubscriptionPlanCard({
   price,
   features,
   buttonText,
-  OnClick
+  OnClick ,
+  isSubcribe,
 }) {
+
+       console.log(  planName,
+        price,
+        features,
+        buttonText,
+        OnClick ,
+        isSubcribe,)
 
   return (
     <div className="subscription-plan-card">
@@ -28,7 +36,8 @@ export default function SubscriptionPlanCard({
           </li>
         ))}
       </ul>
-      <button onClick={OnClick} className="btn">{buttonText}</button>
+ 
+      <button onClick={OnClick} className="btn">{buttonText}</button>  
     </div>
   );
 }
